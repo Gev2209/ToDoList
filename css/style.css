@@ -1,0 +1,101 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: dimgray;
+  letter-spacing: 1px;
+  box-sizing: border-box;
+}
+#wrapper {
+  width: 70%;
+  margin: 20px auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  padding: 0 0 20px;
+  border: 1px solid lightgray;
+}
+#wrapper header {
+  display: flex;
+}
+#wrapper header #page_banner {
+  width: 100%;
+  background-color: #dbd6d6;
+}
+#wrapper header #page_banner .title {
+  display: flex;
+  justify-content: center;
+}
+#wrapper header #page_banner p {
+  display: flex;
+  justify-content: center;
+}
+#wrapper header #page_banner #search_books {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+#wrapper header #page_banner #search_books input {
+  width: 30%;
+  padding: 10px;
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+#wrapper #book_list .title {
+  padding: 7px 30px;
+  text-align: center;
+}
+#wrapper #book_list ul {
+  list-style: none;
+}
+#wrapper #book_list ul li {
+  padding: 10px 20px;
+  border-left: 5px solid #c2bfbf;
+  padding: 20px;
+  margin: 20px 15px;
+  cursor: pointer;
+}
+#wrapper #book_list ul li .name {
+  display: flex;
+  justify-content: center;
+}
+#wrapper #book_list ul li:hover {
+  border-left: 5px solid black;
+}
+#wrapper #book_list ul li .delete {
+  float: right;
+  background-color: #410241;
+  color: white;
+  padding: 0 9px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px #241e1e;
+  transition: 0.5s;
+}
+#wrapper #book_list ul li .delete:hover {
+  background: #180018;
+}
+#wrapper #add_book {
+  display: inline-block;
+  margin-left: 40%;
+}
+#wrapper #add_book label {
+  float: right;
+}
+#wrapper #add_book #add_form_input {
+  padding: 10px 40px;
+}
+#wrapper #add_book #text {
+  display: flex;
+  margin-top: 35px;
+}
+#wrapper #add_book #add_button {
+  padding: 0 30px;
+  color: white;
+  background-color: #410241;
+  border: none;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#wrapper #add_book #add_button:hover {
+  background: #180018;
+}

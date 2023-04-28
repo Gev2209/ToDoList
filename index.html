@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div id="page_banner">
+                <h1 class="title">Library</h1>
+                <p>Books for Studens</p>
+                <form id="search_books">
+                    <input type="text" placeholder="search-books . . ." id="searchBar">
+                </form>
+            </div>
+        </header>
+        <div id="book_list">
+            <h2 class="title">Books to Read</h2>
+            <ul>
+                <li>
+                    <span class="name"> Name of the Wind</span>
+                    <span class="delete">delete</span>
+                </li>
+                <li>
+                    <span class="name">The Wise Man's Fear</span>
+                    <span class="delete"> delete</span>
+                </li>
+                <li>
+                    <span class="name">Kafka on the Shore</span>
+                    <span class="delete"> delete</span>
+                </li>
+            </ul>
+        </div>
+        <div id="add_book">
+            <input type="checkbox" id="hide">
+            <label for="hide">Hide all books</label>
+            <div id="text">
+                <input type="text" id="add_form_input" placeholder="Add a book...">
+                <button id="add_button">Add</button>
+            </div>
+        </div>
+    </div> 
+    <script src="app.js"></script>   
+</body>
+</html>

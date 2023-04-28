@@ -1,0 +1,109 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: dimgray;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+}
+#wrapper {
+    width: 70%;
+    margin: 20px auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);       
+    padding: 0 0 20px;
+    border: 1px solid lightgray;
+    header {
+        display: flex;
+        #page_banner {
+            width: 100%;
+            background-color: rgb(219, 214, 214);
+            .title {
+                display: flex;
+                justify-content: center;
+            }
+            p {
+                display: flex;
+                justify-content: center;
+            }
+            #search_books {
+                display: flex;
+                justify-content: center;
+                padding: 10px;
+                input {
+                    width: 30%;
+                    padding: 10px;
+                    border: none;
+                    margin-bottom: 10px;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+    #book_list {
+        .title {
+            padding: 7px 30px;
+            text-align: center;
+        }
+        ul {
+            list-style: none;
+
+            li {
+                padding: 10px 20px;
+                border-left: 5px solid rgb(194, 191, 191);
+                padding: 20px;
+                margin: 20px 15px;
+                
+                .name {
+                    display: flex;
+                    justify-content: center;
+                }
+                cursor: pointer;
+                &:hover {
+                    border-left: 5px solid black;
+                }
+                .delete {
+                    float: right;
+                    background-color: rgb(65, 2, 65);
+                    color: white;
+                    padding: 0 9px;
+                    padding-top: 8px;
+                    padding-bottom: 8px;
+                    border-radius: 5px;
+                    box-shadow: 2px 2px 4px rgb(36, 30, 30);
+                    &:hover {
+                        background: rgb(24, 0, 24);
+                    }
+                    transition: 0.5s;
+                }
+            }
+        }
+    }
+    #add_book {
+        display: inline-block;
+        margin-left: 40%;
+        label {
+            float: right;
+        }
+        #add_form_input {
+            padding: 10px 40px;
+        }
+        #text {
+            display: flex;
+            margin-top: 35px;
+        }
+        #add_button {
+            padding: 0 30px;
+            color: white;
+            background-color: rgb(65, 2, 65);
+            border: none;
+            transition: 0.5s;
+            cursor: pointer;
+            &:hover {
+               background: rgb(24, 0, 24);
+            }
+        }
+    }
+}
+
+// *{
+//     border: 1px solid #000;
+// }
