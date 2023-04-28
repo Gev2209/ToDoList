@@ -44,6 +44,11 @@ body {
   margin-bottom: 10px;
   border-radius: 5px;
 }
+@media only screen and (max-width: 600px) {
+  #wrapper header #page_banner #search_books input {
+    width: 55%;
+  }
+}
 #wrapper #book_list .title {
   padding: 7px 30px;
   text-align: center;
@@ -83,11 +88,27 @@ body {
   display: inline-block;
   margin-left: 40%;
 }
+@media only screen and (max-width: 600px) {
+  #wrapper #add_book {
+    margin-left: 20%;
+  }
+}
 #wrapper #add_book label {
   float: right;
 }
+@media only screen and (max-width: 600px) {
+  #wrapper #add_book label {
+    float: left;
+  }
+}
 #wrapper #add_book #add_form_input {
   padding: 10px 40px;
+  border-radius: 3px;
+}
+@media only screen and (max-width: 600px) {
+  #wrapper #add_book #add_form_input {
+    padding: 10px 20px;
+  }
 }
 #wrapper #add_book #text {
   display: flex;
@@ -99,6 +120,7 @@ body {
   background-color: #410241;
   border: none;
   transition: 0.5s;
+  border-radius: 3px;
   cursor: pointer;
 }
 #wrapper #add_book #add_button:hover {

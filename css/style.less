@@ -37,6 +37,9 @@ body {
                     border: none;
                     margin-bottom: 10px;
                     border-radius: 5px;
+                    @media only screen and (max-width:600px) {
+                        width: 55%;
+                    }
                 }
             }
         }
@@ -58,6 +61,7 @@ body {
                 .name {
                     display: flex;
                     justify-content: center;
+                    
                 }
                 cursor: pointer;
                 &:hover {
@@ -83,11 +87,21 @@ body {
     #add_book {
         display: inline-block;
         margin-left: 40%;
+        @media only screen and (max-width:600px) {
+                margin-left: 20%;
+        }
         label {
             float: right;
+            @media only screen and (max-width:600px) {
+                    float: left;
+            }
         }
         #add_form_input {
             padding: 10px 40px;
+            border-radius: 3px;
+            @media only screen and (max-width:600px) {
+                padding: 10px 20px;
+            }
         }
         #text {
             display: flex;
@@ -99,6 +113,7 @@ body {
             background-color: rgb(65, 2, 65);
             border: none;
             transition: 0.5s;
+            border-radius: 3px;
             cursor: pointer;
             &:hover {
                background: rgb(24, 0, 24);
