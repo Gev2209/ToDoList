@@ -22,3 +22,35 @@ const hendleAddBook = () => {
     }  
 }
 addButton.addEventListener('click', hendleAddBook)
+
+const handleDeteleBook = event => {
+        const {target} = event
+        console.log(target.className)
+        if (target.className === 'delete') {
+            // console.log(target,'delete button')
+            const li = target.parentElement
+            console.log(li)
+            ulList.removeChild(li)
+        }
+        }
+        
+        ulList.addEventListener('click', handleDeteleBook)
+        //------------------------------------------------
+        // hide books functional
+        const handelHideBooks = event => {
+            const { target } = event;
+            // if (target.checked) {
+            //    ullist.style.display = 'none' 
+            // } else {
+            //     ullist.style.display = 'block' 
+            // };
+             ulList.style.display = target.checked ? 'none' : 'block' 
+            // console.log(target.checked)
+        }
+        hideBox.addEventListener('input',handelHideBooks)
+        
+        const handleSearche = () => {
+            const {value} = searchBar
+            console.log(value)
+        }
+        searchBar.addEventListener('keyup',handleSearche)
