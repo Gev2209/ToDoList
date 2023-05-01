@@ -2,6 +2,7 @@ const addButton = document.getElementById('add_button');
 const addFormInput = document.getElementById('add_form_input');
 const ulList = document.querySelector('#book_list > ul');
 const hideBox = document.getElementById('hide');
+let liElements = document.getElementsByTagName('li')
 
 const hendleAddBook = () => {
       const { value } = addFormInput;
@@ -54,3 +55,20 @@ const handleDeteleBook = event => {
             console.log(value)
         }
         searchBar.addEventListener('keyup',handleSearche)
+//////////////////////////////////////////////////////////////////
+
+const handleSearch = () => {
+    const query = searchBar.value.trim().toLowerCase();
+    for (let i = 0; i < liElements.length; i++) {
+      const lis = liElements[i];
+      const bookName = lis.querySelector('.name').innerText.toLowerCase();
+      if (bookName.includes(query)) {
+        lis.style.display = 'block';
+      } else {
+        lis.style.display = 'none';
+      }
+    }
+  };
+
+  searchBar.addEventListener('keyup',handleSearch)
+  
