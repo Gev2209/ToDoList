@@ -70,5 +70,5 @@ const handleSearch = () => {
     }
   };
 
-  searchBar.addEventListener('keyup',handleSearch)
+  searchBar.addEventListener('keydown',handleSearch)
   
